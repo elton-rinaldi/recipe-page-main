@@ -59,3 +59,21 @@
     }
 
 }
+
+@media (max-width: 450px) {
+    .sec-container {
+
+        img{
+            border-radius: 0;
+        }
+
+        .preparation{
+
+            li{
+                margin-left: 0;
+                text-indent: 0;
+            }
+        }
+    }
+    
+}
