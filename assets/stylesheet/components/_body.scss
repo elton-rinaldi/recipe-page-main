@@ -11,6 +11,6 @@ main{
     max-width: 700px;
     background-color: a.$white;
     padding: 30px;
-    border-radius: 10px;
+    border-radius: 20px;
     @include a.displayFlex(flex-start, center, column)
 }

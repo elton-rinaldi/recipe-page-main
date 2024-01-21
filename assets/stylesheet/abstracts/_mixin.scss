@@ -11,10 +11,12 @@
     font-family: v.$youngSerif;
     font-size: $size;
     font-weight: 400;
+    color: v.$nutmeg;
 }
 
 @mixin fontBody($weight){
     font-family: v.$outfit;
     font-size: 1rem;
     font-weight: $weight;
+    color: v.$dark-charcoal;
 }

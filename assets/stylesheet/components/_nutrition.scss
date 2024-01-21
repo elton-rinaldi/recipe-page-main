@@ -1,0 +1,37 @@
+@use "../abstracts" as a;
+
+.sec-container3{
+    @include a.displayFlex(flex-start, flex-start, column);
+    width: 100%;
+    padding: 30px 0;
+    
+    h2{
+        @include a.fontTitle(1.55rem);
+        margin-bottom: 20px;
+    }
+
+    p{
+        @include a.fontBody(400);
+        margin-bottom: 20px;
+    }
+
+    .tabela{
+        @include a.fontBody(400);
+        width: 100%;
+
+        table{
+            width: 100%;
+            padding: 20px;
+            border-collapse: collapse;
+        }
+        td{
+            border-bottom: 1px solid #ddd;  
+            padding: 15px 0;
+            text-indent: 20px;
+        }
+
+        .noBorder{
+            border: none;
+        }
+    }
+}

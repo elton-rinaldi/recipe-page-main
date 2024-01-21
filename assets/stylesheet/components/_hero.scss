@@ -8,6 +8,7 @@
     h1{
         @include a.fontTitle(1.7rem);
         margin: 20px 0 15px;  
+        color: #000;
     }
 
     p{
