@@ -2,4 +2,12 @@
 @use "./components/hero";
 @use "./components/instructions";
 @use "./components/nutrition";
+@use "./components/media";
+
+@media (max-width: 450px){
+      .container{
+            padding-left: 25px;
+            padding-right: 25px;
+      }
+}
 

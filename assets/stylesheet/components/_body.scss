@@ -19,18 +19,3 @@ main{
 }
 
 
-@media (max-width: 450px) {
-    body{
-        padding: 0;
-    }
-
-    main{
-        border-radius: 0;
-        padding: 0;
-    }
-
-    .container{
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-}

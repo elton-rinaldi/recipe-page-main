@@ -30,17 +30,13 @@
             text-indent: 20px;
         }
 
+        .bold{
+            font-weight: 700;
+            color: a.$nutmeg;
+        }
+
         .noBorder{
             border: none;
         }
     }
-}
-
-@media (max-width: 450px){
-    .container{
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-
-    
 }

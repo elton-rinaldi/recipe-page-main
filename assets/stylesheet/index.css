@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Young+Serif&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Outfit:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -28,19 +28,6 @@ main {
   align-items: center;
 }
 
-@media (max-width: 450px) {
-  body {
-    padding: 0;
-  }
-  main {
-    border-radius: 0;
-    padding: 0;
-  }
-  .container {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-}
 .sec-container {
   border-bottom: 2px solid #ddd;
   padding-bottom: 20px;
@@ -94,13 +81,18 @@ main {
   font-weight: 400;
   margin-bottom: 5px;
 }
-.sec-container .ingredients .li-ingredients {
-  margin: 20px;
+.sec-container .ingredients ul {
+  list-style-type: none;
+}
+.sec-container .ingredients li {
   font-family: "Outfit", sans-serif;
-  font-size: 1rem;
-  font-weight: 400;
-  color: hsl(24, 5%, 18%);
-  text-indent: 20px;
+  position: relative;
+  padding: 5px 35px;
+}
+.sec-container .ingredients li::before {
+  content: counter(li, disc);
+  position: absolute;
+  left: 0;
 }
 
 @media (max-width: 450px) {
@@ -131,12 +123,25 @@ main {
   color: hsl(24, 5%, 18%);
 }
 
-@media (max-width: 450px) {
-  .container {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
+.list-content ol {
+  counter-reset: li;
+  margin-left: 0;
+  padding-left: 0;
 }
+.list-content ol li {
+  position: relative;
+  padding: 5px 25px;
+  list-style-type: none;
+}
+.list-content ol li::before {
+  content: counter(li) ". ";
+  counter-increment: li;
+  position: absolute;
+  left: -12px;
+  font-weight: 700;
+  color: hsl(14, 45%, 36%);
+}
+
 .sec-container3 {
   display: flex;
   flex-direction: column;
@@ -176,14 +181,27 @@ main {
   padding: 15px 0;
   text-indent: 20px;
 }
+.sec-container3 .tabela .bold {
+  font-weight: 700;
+  color: hsl(14, 45%, 36%);
+}
 .sec-container3 .tabela .noBorder {
   border: none;
 }
 
 @media (max-width: 450px) {
+  body {
+    padding: 0;
+  }
+  main {
+    border-radius: 0;
+    padding: 0;
+  }
+}
+@media (max-width: 450px) {
   .container {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
   }
 }
 

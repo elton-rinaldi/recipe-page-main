@@ -1,4 +1,4 @@
-@use "../abstracts/" as a;
+@use "../abstracts" as a;
 
 .sec-container2{
     border-bottom: 2px solid #ccc;
@@ -15,9 +15,24 @@
     }
 }
 
-@media (max-width:450px){
-    .container{
-        padding-left: 20px;
-        padding-right: 20px;
+.list-content ol{
+    counter-reset: li;
+    margin-left: 0;
+    padding-left: 0;
+
+    li{
+        position: relative;
+        padding: 5px 25px;
+        list-style-type: none;
+    }
+
+    li::before{
+        content: counter(li) ". ";
+        counter-increment:li;
+        position: absolute;
+        left: -12px;
+        font-weight: 700;
+        color: a.$nutmeg;
     }
 }
+
