@@ -1,0 +1,60 @@
+@use "../abstracts" as a;
+
+.sec-container{
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 20px;
+
+
+    h1{
+        @include a.fontTitle(1.7rem);
+        margin: 20px 0 15px;  
+    }
+
+    p{
+        @include a.fontBody(400);
+    } 
+
+    img{
+        width: 100%;
+        display: block;
+        max-width: 700px;
+        border-radius: 10px; 
+    }
+
+    .preparation{
+        background-color: a.$rose-white;
+        margin: 40px 0;
+        padding: 20px 40px;        
+        @include a.fontBody(400);
+        border-radius: 10px;
+
+        h3{
+            color: a.$dark-raspberry;
+        }
+
+        ul{
+            margin: 0 20px;
+        }
+
+        li{
+            text-indent: 30px;
+            margin: 15px;
+        }
+    }
+
+    .ingredients{
+        h2{
+            color: a.$nutmeg;
+            @include a.fontTitle(1.55rem);
+            font-weight: 400; 
+            margin-bottom: 5px;
+        }
+
+        .li-ingredients{
+            margin: 20px;
+            @include a.fontBody(400);
+            text-indent: 20px;
+        }
+    }
+
+}

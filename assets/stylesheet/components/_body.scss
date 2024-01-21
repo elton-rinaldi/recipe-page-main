@@ -1,0 +1,16 @@
+@use "../abstracts" as a;
+
+body{
+    @include a.displayFlex(center, center, row);
+    background-color: a.$eggshell;
+    padding: 80px 0;
+}
+
+main{
+    width: 100%;
+    max-width: 700px;
+    background-color: a.$white;
+    padding: 30px;
+    border-radius: 10px;
+    @include a.displayFlex(flex-start, center, column)
+}
